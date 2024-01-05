@@ -1,0 +1,22 @@
+$color_1: rgb(255, 255, 255);
+$background-color_1: rgba(16, 13, 13, 0.982);
+$background-color_hover: rgba(16, 13, 13, 0.904);
+
+.themeBtn {
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: $background-color_1;
+  color: $color_1;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.06);
+    background-color: $background-color_hover;
+  }
+}

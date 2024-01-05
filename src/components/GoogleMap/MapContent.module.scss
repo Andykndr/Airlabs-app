@@ -1,0 +1,24 @@
+$font-family_1: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$transper: rgba(174, 186, 219, 0.5661436449579832) 0%,
+  rgba(219, 213, 241, 1) 31%, rgba(219, 213, 241, 1) 79%;
+
+.map-block {
+  padding-top: 30px;
+  width: 30%;
+  height: 100%;
+  background: rgb(174, 186, 219);
+  background: linear-gradient(276deg, $transper);
+  position: absolute;
+  top: 0;
+}
+.infoFlight {
+  font-family: $font-family_1;
+  padding-left: 20px;
+  text-align: start;
+  margin: 10px;
+  font-size: 18px;
+  span {
+    font-style: italic;
+    font-weight: bold;
+  }
+}

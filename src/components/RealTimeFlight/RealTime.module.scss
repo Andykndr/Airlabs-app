@@ -1,0 +1,26 @@
+$color_1: rgb(0, 0, 0);
+
+.container {
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 70vw;
+  height: 80vh;
+}
+.flight-info-header {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 3px 4px 8px rgba(2, 1, 9, 0.59);
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(0, 0, 0, 0.164));
+  span {
+    color: $color_1;
+    text-decoration: underline;
+  }
+}
+@media (max-width: 768px) {
+  .flight-info-header {
+    font-size: 2em;
+  }
+}

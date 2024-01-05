@@ -1,0 +1,40 @@
+$item-backgr: rgba(36, 0, 0, 1) 0%, rgb(237, 233, 233) 0%,
+  rgba(145, 100, 184, 0.272) 0%, rgb(239, 237, 242) 23%, rgb(226, 226, 230) 80%,
+  rgb(236, 235, 240) 100%;
+
+.nearbyContent {
+  padding: 10px;
+}
+.nearby-header {
+  text-shadow: 2px 0px 12px rgba(0, 0, 0, 0.65);
+  font-size: 32px;
+  font-size: 32px;
+}
+.list {
+  li {
+    background: rgb(36, 0, 0);
+    background: linear-gradient(276deg, $item-backgr);
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: start;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.437);
+  }
+}
+.itemNumber {
+  font-size: 20px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.437);
+}
+.noAirports {
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 2px 0px 12px rgba(0, 0, 0, 0.65);
+  background: linear-gradient(to right, #59071a 0%, #a6110e 73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 480px) {
+  .nearbyContent {
+    margin-top: 100px;
+  }
+}

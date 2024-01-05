@@ -1,0 +1,61 @@
+$color_1: black;
+$box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+$gradient: linear-gradient(
+  90deg,
+  rgba(178, 210, 226, 1) 0%,
+  rgba(208, 208, 226, 1) 50%,
+  rgba(241, 240, 244, 1) 100%
+);
+.flight-info-block {
+  position: relative;
+  top: -70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 7px;
+  padding: 40px 200px;
+  height: 100%;
+  background: $gradient;
+  box-shadow: $box-shadow inset;
+}
+.flight-info-header {
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 3px 4px 8px rgba(2, 1, 9, 0.59);
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(0, 0, 0, 0.164));
+}
+.flight-info-form {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+.flight-info-search-block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.button {
+  margin-top: 20px;
+}
+.nearbyContent {
+  border: 1px solid black;
+}
+.list {
+  li {
+    color: $color_1;
+  }
+}
+@media (max-width: 768px) {
+  .flight-info-block {
+    padding: 40px 100px;
+  }
+}
+@media (max-width: 480px) {
+  .flight-info-block {
+    padding: 40px 50px;
+  }
+}

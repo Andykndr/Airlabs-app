@@ -1,0 +1,112 @@
+$color_1: white;
+$color_2: #00000080;
+$color_3: rgb(134, 20, 20);
+$color_4: black;
+$background-color_1: rgb(9, 10, 43);
+$background-line2: rgba(36, 0, 0, 1) 0%, rgba(34, 21, 221, 1) 0%,
+  rgba(28, 23, 75, 1) 0%, rgba(53, 19, 97, 1) 41%, rgba(15, 15, 83, 1) 79%,
+  rgba(42, 4, 75, 0.2721463585434174);
+$background-line: rgba(36, 0, 0, 1) 0%, rgba(34, 21, 221, 1) 0%,
+  rgba(48, 23, 70, 0.2721463585434174) 0%, rgba(53, 19, 97, 1) 18%,
+  rgba(15, 15, 83, 1) 53%, rgba(8, 3, 58, 1) 98%;
+
+.flightContent {
+  padding: 10px;
+}
+.flight-header {
+  text-shadow: 2px 0px 12px rgba(0, 0, 0, 0.65);
+  font-size: 32px;
+  -webkit-box-reflect: below 1px
+    liner-gradient(transparent, rgba(0, 0, 0, 0.137));
+  transition: all 0.3s ease-in-out;
+}
+.flight-block {
+  padding-bottom: 20px;
+  position: relative;
+  background: url('../../resources/img/ticket/ticket.jpg') center center/cover
+    no-repeat;
+  min-height: 300px;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.172);
+  border-radius: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    scale: 1.02;
+  }
+}
+.upline {
+  color: $color_1;
+  top: -2px;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  position: absolute;
+  height: 30px;
+  background-color: $background-color_1;
+  background: rgb(36, 0, 0);
+  background: linear-gradient(276deg, $background-line);
+}
+.downline {
+  bottom: -2px;
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  position: absolute;
+  height: 30px;
+  background: rgb(36, 0, 0);
+  background: linear-gradient(276deg, $background-line2 100%);
+}
+.flightBlocks {
+  margin-top: 20px;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 1fr;
+}
+.sblock {
+  > .info-label {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}
+.info-label {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+.info-city {
+  min-height: 80px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 20px;
+  font-size: 22px;
+  > span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+.info-time {
+  > p {
+    text-align: start;
+    padding: 10px 0 0 10px;
+    color: $color_2;
+    margin: 0;
+  }
+}
+.time {
+  font-size: 30px;
+  color: $color_3;
+}
+.info-termin {
+  text-align: start;
+  padding: 10px 0 0 10px;
+  color: $color_2;
+  margin: 0;
+  > span {
+    font-size: 20px;
+    color: $color_4;
+  }
+}
+.status {
+  font-size: 20px;
+  padding-top: 30px;
+}

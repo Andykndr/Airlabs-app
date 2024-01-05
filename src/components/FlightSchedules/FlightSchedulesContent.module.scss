@@ -1,0 +1,97 @@
+$color_1: rgb(0, 0, 0);
+$color_2: rgb(12, 83, 12);
+$background-color_header: rgba(0, 128, 128, 0.498);
+$background-color_box: rgba(36, 0, 0, 1) 0%, rgba(246, 246, 246, 1) 0%,
+  rgba(193, 202, 226, 1) 0%, rgba(163, 166, 195, 1) 41%,
+  rgba(197, 191, 222, 1) 79%, rgba(122, 88, 152, 0.2721463585434174);
+$box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.flight-schedules-blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.flight-schedule-block {
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  background: rgb(36, 0, 0);
+  background: linear-gradient(276deg, $background-color_box 100%);
+  border: 1px solid rgba(255, 255, 255, 0.657);
+}
+.header {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: $background-color_header;
+  padding-left: 20px;
+}
+.schdule-info {
+  background-color: $background-color_header;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+.schudule-list {
+  > li {
+    padding: 7px 0;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 22px;
+    border-bottom: 1px solid rgba(103, 98, 103, 0.378);
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      margin: 10px 30px 0 30px;
+      cursor: pointer;
+      scale: 1.1;
+    }
+  }
+}
+.schedule-flight {
+  color: $color_1;
+  font-weight: 600;
+}
+.schedule-time {
+  font-size: 24px;
+  font-weight: 700;
+  color: $color_2;
+}
+.schedule-status {
+  color: rgb(22, 99, 22);
+  font-weight: 700;
+  &-done {
+    color: rgba(255, 13, 0, 0.661);
+    font-weight: 700;
+  }
+}
+.defaultMessage {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+}
+@media (max-width: 1200px) {
+  .flight-schedule-block {
+    width: 100%;
+  }
+  .schdule-info {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .flight-schedules-blocks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .schdule-info {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .schdule-info {
+    font-size: 20px;
+  }
+}

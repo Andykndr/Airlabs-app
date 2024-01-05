@@ -1,0 +1,22 @@
+$color_1: #5b5c69;
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  label {
+    text-align: center;
+    font-style: italic;
+    color: $color_1;
+  }
+  input {
+    border: 3px solid rgba(0, 179, 255, 0.365);
+    border-radius: 10px;
+    outline: none;
+    background: #f6f7fa;
+    padding: 8px 12px;
+    color: $color_1;
+    margin-bottom: 4px;
+  }
+}

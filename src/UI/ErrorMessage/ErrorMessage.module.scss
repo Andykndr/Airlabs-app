@@ -1,0 +1,12 @@
+.error-message {
+  padding: 20px 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  .error-text {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 3px #352e2e;
+  }
+}
