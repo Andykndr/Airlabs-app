@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/airlabs-app/static/css/main.d218058a.css",
+    "main.js": "/airlabs-app/static/js/main.1592a630.js",
+    "static/media/main.png": "/airlabs-app/static/media/main.cccd738485af0218b6f8.png",
+    "static/media/ticket.jpg": "/airlabs-app/static/media/ticket.21d0a455aa47ee7ccd5d.jpg",
+    "static/media/mainImg.avif": "/airlabs-app/static/media/mainImg.1b95b685810ec43a355a.avif",
+    "static/media/logo.png": "/airlabs-app/static/media/logo.ecff1da5c0252ac97ccc.png",
+    "index.html": "/airlabs-app/index.html",
+    "main.d218058a.css.map": "/airlabs-app/static/css/main.d218058a.css.map",
+    "main.1592a630.js.map": "/airlabs-app/static/js/main.1592a630.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d218058a.css",
+    "static/js/main.1592a630.js"
+  ]
+}
