@@ -16,8 +16,7 @@ function App() {
         <AppHeader />
         <Routes>
           <Route exact path="/" element={<AirlabsMain />} />
-          <Route exact path="*" element={<AirlabsMain />} />
-          // <Route exact path="*" element={<AirlabsError />} />
+          <Route exact path="*" element={<AirlabsError />} />
           <Route exact path="/schedules" element={<FlightSchedules />} />
           <Route exact path="/nearby" element={<NearbyAirport />} />
           <Route exact path="/flight-info" element={<FlightInfo />} />
