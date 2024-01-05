@@ -7,7 +7,7 @@ function Airlabs() {
       <h1>AirLabs App - flight information!</h1>
       <div className={styles['main-blocks']}>
         <div className={styles['main-block-img']}>
-          <img src={img} alt="plane-image" />
+          <img src={img} alt="plane" />
         </div>
         <div className={styles['main-block']}>
           <h2>What is AirLabs?</h2>

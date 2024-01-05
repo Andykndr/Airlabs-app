@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import src from './error.gif';
 import styles from './ErrorMessage.module.scss';
 

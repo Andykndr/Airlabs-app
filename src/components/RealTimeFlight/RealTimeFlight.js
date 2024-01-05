@@ -25,7 +25,6 @@ export default function RealTimeFlight() {
     id: 'carbon-compound-410010',
     googleMapsApiKey: 'AIzaSyCCD7QbQzVB59baCDDcOR__4xebQq3BkwA',
   });
-
   useEffect(() => {
     if (latitude.length > 0) {
       const timer = setInterval(() => {
@@ -33,8 +32,8 @@ export default function RealTimeFlight() {
       }, 10000);
       return () => clearInterval(timer);
     }
+    // eslint-disable-next-line
   }, [latitude]);
-
   return (
     <div className={styles.container}>
       {latitude.length < 1 ? (
