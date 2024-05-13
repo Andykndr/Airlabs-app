@@ -56,7 +56,7 @@ export default function Map({
         >
           {themeMode ? 'City / on' : 'City / off'}
         </button>
-        <Marker
+        <Marker 
           position={position}
           onMouseDown={() => setShowContent(true)}
           icon={{

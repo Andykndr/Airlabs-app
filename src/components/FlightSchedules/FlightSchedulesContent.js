@@ -16,7 +16,6 @@ export default function FlightSchedulesContent() {
   const router = useNavigate();
 
   const onRealTimeFlightRequest = (code) => {
-    console.log('work');
     dispatch(fetchFlightCoords(code));
   };
 
